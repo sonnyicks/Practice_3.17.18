@@ -3,13 +3,15 @@ using namespace std;
 
 int main(){
 	
-int fill[6];
+float fill[6];
+float count = 0;
 
-	for (int i=0; i<5; i++){
-		cout << "Enter number " << i+1 << endl;
+	for (int i=0; i<6; i++){
+		cout << "Enter number " << i+1 << ": ";
 		cin >> fill[i];
+		count+=fill[i];
 	}
-cout << fill[0,1,2,3,4,5];
+cout << "The average of your numbers is " << count/6;
 	
 	return 0;
 }
